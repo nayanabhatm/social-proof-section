@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --purple: hsl(300, 43%, 22%);
+  --pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 5%;
+  font-family: "Spartan", sans-serif;
+  background: url(images/bg-pattern-top-mobile.svg) top left no-repeat,
+    url(images/bg-pattern-bottom-mobile.svg) bottom center no-repeat;
+}
+p {
+  font-size: 15px;
+}
+
+/* header */
+
+header {
+  color: var(--purple);
+  text-align: center;
+}
+
+header p {
+  color: var(--dark-grayish-magenta);
+}
+
+/* ratings */
+
+.ratings {
+  text-align: center;
+  color: var(--purple);
+}
+
+.rating .checked {
+  color: gold;
+  margin-bottom: 0;
+}
+
+.rating h3 {
+  margin-top: 10px;
+}
+
+.rating {
+  background-color: var(--light-grayish-magenta);
+  border-radius: 8px;
+  margin: 5% 0%;
+  padding-bottom: 3px;
+}
+
+/* reviews */
+
+.review {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 8%;
+  margin: 5% 0;
+  border-radius: 8px;
+}
+
+.review img {
+  border-radius: 50%;
+  width: 20%;
+  margin: 0% 10% 2% 0;
+}
+
+.review .name p {
+  margin-top: 8px;
+  color: var(--pink);
+}
+
+.review .name h4 {
+  margin: 0;
+}
+
+.review .reviewer {
+  display: flex;
+  margin: 5% 0;
+}
+
+/* Media query */
+@media all and (min-width: 1000px) {
+  /* top container */
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+  }
+
+  /* header  */
+  header {
+    text-align: start;
+    width: 20%;
+    height: 40%;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  /* ratings */
+  .rating {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    min-width: 25vw;
+    padding: 3% 0;
+  }
+
+  .rating1 {
+    position: relative;
+    right: 100%;
+  }
+
+  .rating2 {
+    position: relative;
+    right: 50%;
+  }
+
+  /* reviews */
+  .reviews {
+    display: flex;
+  }
+
+  .review {
+    padding: 1%;
+    margin: 5% 2%;
+  }
+
+  .review2 {
+    position: relative;
+    top: 20px;
+  }
+
+  .review3 {
+    position: relative;
+    top: 50px;
+  }
+}
