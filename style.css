@@ -109,12 +109,12 @@ header p {
 
   .rating1 {
     position: relative;
-    right: 100%;
+    right: 60%;
   }
 
   .rating2 {
     position: relative;
-    right: 50%;
+    right: 30%;
   }
 
   /* reviews */
