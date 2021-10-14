@@ -87,6 +87,11 @@ header p {
   }
 
   /* header  */
+
+  header h1 {
+    text-align: start;
+  }
+
   header {
     text-align: start;
     width: 20%;
@@ -103,8 +108,8 @@ header p {
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
-    min-width: 25vw;
-    padding: 3% 0;
+    min-width: 27vw;
+    padding: 3%;
   }
 
   .rating1 {
